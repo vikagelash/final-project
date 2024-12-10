@@ -1,0 +1,116 @@
+body {
+    padding-top: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.989);
+    height: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 20px;
+    margin-left: 50px;
+    margin-right: 78px;
+    position: relative;
+    
+}
+
+.navbar .nav-links {
+    display: flex; 
+    gap: 50px; 
+}
+
+.navbar .nav-links a {
+    text-decoration: none; 
+    color: #2a2828; 
+    font-size: 17px;
+    font-weight: 400; 
+    transition: color 0.3s ease; 
+}
+
+.navbar .nav-links a:hover {
+    color: #584b39; 
+}
+
+.logo {
+    width: 200px;
+    height: 50px;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+.frank1 {
+    margin: 0 auto;
+    margin-left: 400px;
+
+}
+
+.about {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10%;
+}
+
+.aboutus {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10%;
+    margin-top: 15px;
+    max-width: 1300px;
+    margin-right: 10%;
+}
+
+.photo {
+    margin-left: 10%;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+@media only screen and (max-width: 1450px) {
+    .photo {
+        max-width: 400px;
+    }
+        
+}
+
+.photocontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.phototext {
+    max-width: 650px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(128, 128, 128, 0.989);
+    margin-top: 5%;
+}
