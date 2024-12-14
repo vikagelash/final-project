@@ -1,3 +1,17 @@
+@media only screen and (max-width: 1500px) {
+    .concert {
+        width: 500px;
+        height: 300px;
+    }
+
+    .description {
+        font-size: 15px;
+        max-width: 500px;
+    }
+
+    }
+
+
 @media only screen and (max-width: 1300px) {
     .frankpic {
         max-width: 500px;
@@ -12,6 +26,17 @@
         font-size: 12px;
         font-weight: 400;
     }
+
+    .concert {
+        width: 400px;
+        height: 200px;
+    }
+
+    .description {
+        font-size: 15px;
+        max-width: 400px;
+    }
+    
 
 
 }
@@ -31,6 +56,16 @@
     .fact {
         font-size: 12px;
         font-weight: 400;
+    }
+
+    .concert {
+        width: 300px;
+        height: 150px;
+    }
+
+    .description {
+        font-size: 15px;
+        max-width: 300px;
     }
 
     
@@ -66,6 +101,16 @@
 
     .categories {
         margin-left: 27%;
+    }
+
+    .concert {
+        width: 90%;
+        height: 55%;
+    }
+
+    .description {
+        font-size: 15px;
+        max-width: 90%;
     }
 }
 

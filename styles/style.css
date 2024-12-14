@@ -6,36 +6,36 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.989);
+    background-color: rgba(211, 140, 17, 0.961);
     height: 100px;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 10px 20px;
     margin-left: 50px;
     margin-right: 78px;
     position: relative;
-    
+
 }
 
 .navbar .nav-links {
-    display: flex; 
-    gap: 50px; 
+    display: flex;
+    gap: 50px;
 }
 
 .navbar .nav-links a {
-    text-decoration: none; 
-    color: #2a2828; 
+    text-decoration: none;
+    color: #2a2828;
     font-size: 17px;
-    font-weight: 400; 
-    transition: color 0.3s ease; 
+    font-weight: 400;
+    transition: color 0.3s ease;
 }
 
 .navbar .nav-links a:hover {
-    color: #584b39; 
+    color: #584b39;
 }
 
 .logo {
@@ -85,8 +85,8 @@ header {
 .products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .productphoto {
@@ -134,7 +134,7 @@ header {
 .album {
     width: 250px;
     height: 250px;
-    
+
 }
 
 .albumstext {
@@ -146,19 +146,38 @@ header {
 }
 
 .productsall {
-        display: flex;
-        flex-wrap: wrap;
-        
-        justify-content: space-evenly;
-        margin-top: 3%;
-        gap: 30px;
-        margin-left: 30px;
-    } 
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    margin-top: 3%;
+    gap: 30px;
+    margin-left: 30px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.button {
+    background-color: #2c0887;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 16px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
 
 .footer {
     display: flex;
     width: 100%;
     height: 300px;
-    background-color: rgba(128, 128, 128, 0.989);
+    background-color: rgba(211, 140, 17, 0.961);
     margin-top: 5%;
 }
