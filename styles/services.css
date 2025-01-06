@@ -1,5 +1,6 @@
 body {
     padding-top: 45px;
+    margin: 0;
 }
 
 header {
@@ -7,7 +8,8 @@ header {
     top: 0;
     width: 100%;
     background-color: #fffffff5;
-    height: 40px;
+    height: 60px;  /* Adjusted header height */
+    z-index: 10;
 }
 
 .navbar {
@@ -18,7 +20,6 @@ header {
     margin-left: 50px;
     margin-right: 78px;
     position: relative;
-
 }
 
 .navbar .nav-links {
@@ -27,14 +28,15 @@ header {
 }
 
 .company {
-    font-size: 20px;
+    font-size: 24px;  /* Increased font size for better visibility */
     font-weight: 700;
-    letter-spacing: 0.2cap;
+    letter-spacing: 0.2ch;
 }
+
 .navbar .nav-links a {
     text-decoration: none;
     color: #2a2828;
-    font-size: 17px;
+    font-size: 18px;  /* Increased font size */
     font-weight: 400;
     transition: color 0.3s ease;
 }
@@ -45,30 +47,28 @@ header {
 
 .cover {
     width: 100%;
-    height: 600px; 
+    height: 600px;
     background-image: url('../images/gg_cover.avif');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .cover-text {
     font-weight: 700;
     position: absolute;
     top: 55%;
-    left: 15%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
     font-size: 54px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
 
 .logo {
     width: 200px;
     height: 50px;
 }
-
 
 .box {
     display: flex;
@@ -98,8 +98,8 @@ header {
 .products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .productphoto {
@@ -127,7 +127,6 @@ header {
 .album {
     width: 320px;
     height: 350px;
-    
 }
 
 .album1 {
@@ -138,30 +137,26 @@ header {
 .productsall {
     display: flex;
     flex-wrap: wrap;
-    
     justify-content: space-evenly;
     margin-top: 3%;
     gap: 50px;
     margin-left: 30px;
-} 
+}
 
 .productsall2 {
     display: flex;
     flex-wrap: wrap;
-    
     justify-content: space-evenly;
     margin-top: 3%;
     gap: 40px;
     margin-left: 30px;
-} 
-
+}
 
 .albumstext {
     margin-top: 5%;
     font-size: 40px;
     font-weight: 700;
     margin-left: 9%;
-
 }
 
 .albumdiscription {
@@ -171,28 +166,34 @@ header {
     max-width: 250px;
 }
 
-
 .footer {
-    display: flex;
-    width: 100%;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.961);
-    margin-top: 10%;
+    background-color: #000000;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    margin-top: 40px;
 }
+
+.footer p {
+    font-size: 14px;
+}
+
 
 .txt {
     margin-right: 0%;
     max-width: 300px;
 }
+
 .container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 10vh;
     margin-top: 2%;
 }
+
 .button {
-    background-color: #000000; 
+    background-color: #000000;
     border: none;
     border-radius: 12px;
     color: white;
@@ -200,5 +201,80 @@ header {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-  }
+}
 
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    
+
+    .superstar {
+        font-size: 35px;
+        margin-left: 0;
+    }
+
+    .productsall,
+    .productsall2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 250px;
+    }
+
+    .album,
+    .album1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .albumstext {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .discription {
+        font-size: 18px;
+    }
+
+    .button {
+        padding: 14px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .superstar {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .categories {
+        font-size: 36px;
+    }
+
+    .product {
+        width: 200px;
+    }
+
+    .album {
+        width: 100%;
+        height: auto;
+    }
+
+    .album1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .button {
+        padding: 12px 10px;
+        font-size: 12px;
+    }
+
+    .footer {
+        height: 40%;
+        padding: 20px;
+    }
+}

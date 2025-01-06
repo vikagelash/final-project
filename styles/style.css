@@ -1,5 +1,6 @@
 body {
     padding-top: 45px;
+    margin: 0;
 }
 
 header {
@@ -7,7 +8,8 @@ header {
     top: 0;
     width: 100%;
     background-color: #fffffff5;
-    height: 40px;
+    height: 60px;  /* Adjusted header height */
+    z-index: 10;
 }
 
 .navbar {
@@ -18,7 +20,6 @@ header {
     margin-left: 50px;
     margin-right: 78px;
     position: relative;
-
 }
 
 .navbar .nav-links {
@@ -27,14 +28,15 @@ header {
 }
 
 .company {
-    font-size: 20px;
+    font-size: 24px;  /* Increased font size for better visibility */
     font-weight: 700;
-    letter-spacing: 0.2cap;
+    letter-spacing: 0.2ch;
 }
+
 .navbar .nav-links a {
     text-decoration: none;
     color: #2a2828;
-    font-size: 17px;
+    font-size: 18px;  /* Increased font size */
     font-weight: 400;
     transition: color 0.3s ease;
 }
@@ -45,30 +47,29 @@ header {
 
 .cover {
     width: 100%;
-    height: 600px; 
+    height: 600px;
     background-image: url('../images/gg_cover.avif');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .cover-text {
     font-weight: 700;
     position: absolute;
     top: 55%;
-    left: 15%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
     font-size: 54px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
 
 .products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     margin-top: 5%;
 }
 
@@ -87,30 +88,19 @@ header {
     max-width: 250px;
 }
 
-.albums {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-    justify-content: space-evenly;
-    margin-top: 3%;
-}
-
 .album {
     width: 260px;
     height: 330px;
-    
 }
 
 .productsall {
     display: flex;
     flex-wrap: wrap;
-    
     justify-content: space-evenly;
     margin-top: 3%;
     gap: 17px;
     margin-left: 30px;
-} 
-
+}
 
 .box {
     display: flex;
@@ -139,34 +129,134 @@ header {
     margin-left: 100px;
 }
 
-
 .cover2 {
     margin-top: 5%;
     width: 100%;
-    height: 600px; 
+    height: 600px;
     background-image: url('../images/cover2.avif');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
 
 .cover3 {
     margin-top: 5%;
     width: 100%;
-    height: 600px; 
+    height: 600px;
     background-image: url('../images/gg_people.avif');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
-
 
 .footer {
-    display: flex;
-    width: 100%;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.961);
-    margin-top: 10%;
+    background-color: #000000;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    margin-top: 40px;
 }
+
+.footer p {
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .navbar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .navbar .nav-links {
+        gap: 20px;
+    }
+    .cover-text {
+        font-size: 40px;
+        left: 10%;
+    }
+    .products {
+        margin-top: 2%;
+    }
+    .product {
+        margin: 0 10px;
+    }
+    .box {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .frankpic {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .text {
+        margin-left: 0;
+    }
+    .cover2, .cover3 {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .company {
+        font-size: 18px;
+    }
+    .navbar .nav-links a {
+        font-size: 15px;
+    }
+    .cover-text {
+        font-size: 32px;
+        left: 5%;
+    }
+    .productsall {
+        gap: 10px;
+    }
+    .album {
+        width: 220px;
+        height: 290px;
+    }
+    .discription {
+        font-size: 16px;
+        max-width: 200px;
+    }
+    .text {
+        margin-left: 0;
+        font-size: 16px;
+    }
+    .box {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .nav-links a {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .cover-text {
+        font-size: 28px;
+        left: 0;
+    }
+    .products {
+        margin-top: 2%;
+    }
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .frankpic {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .cover, .cover2, .cover3 {
+        height: 300px;
+    }
+    .text {
+        font-size: 14px;
+    }
+}
+
