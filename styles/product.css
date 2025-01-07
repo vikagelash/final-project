@@ -1,0 +1,147 @@
+body {
+    padding-top: 45px;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fffffff5;
+    height: 60px; 
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-left: 50px;
+    margin-right: 78px;
+    position: relative;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+.company {
+    font-size: 24px;  
+    font-weight: 700;
+    letter-spacing: 0.2ch;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #2a2828;
+    font-size: 18px;  
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #584b39;
+}
+
+.index {
+    text-decoration: none;
+    color: black;
+}
+
+.company {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.product-details {
+    display: flex;
+    gap: 50px;
+    margin: 40px;
+    flex-wrap: wrap; 
+}
+
+.album {
+    width: 100%;
+    height: auto; 
+    max-width: 500px;
+}
+
+.details-container {
+    max-width: 500px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .product-details {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .album {
+        max-width: 100%; 
+    }
+
+    .details-container {
+        max-width: 90%; 
+    }
+}
+
+
+.image-container img {
+    max-width: 500px;
+    width: 100%;
+}
+
+
+.details-container h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+
+.price {
+    font-size: 24px;
+    color: #584b39;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.features {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.buy-now {
+    background-color: #584b39;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #2a2828;
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 14px;
+}

@@ -44,6 +44,10 @@ header {
     color: #584b39;
 }
 
+.index {
+    text-decoration: none;
+    color: black;
+}
 
 .hero-section {
     position: relative;

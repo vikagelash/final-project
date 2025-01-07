@@ -45,6 +45,11 @@ header {
     color: #584b39;
 }
 
+.index {
+    text-decoration: none;
+    color: black;
+}
+
 .cover {
     width: 100%;
     height: 600px;
@@ -58,7 +63,7 @@ header {
     font-weight: 700;
     position: absolute;
     top: 55%;
-    left: 15%;
+    left: 20%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 54px;
@@ -161,7 +166,6 @@ header {
     font-size: 14px;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
     .navbar {
         margin-left: 20px;
@@ -171,8 +175,9 @@ header {
         gap: 20px;
     }
     .cover-text {
+        top: 45%;
         font-size: 40px;
-        left: 10%;
+        left: 40%;
     }
     .products {
         margin-top: 2%;
@@ -195,6 +200,10 @@ header {
     .cover2, .cover3 {
         height: 400px;
     }
+
+    .cover {
+        height: 500px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -206,7 +215,8 @@ header {
     }
     .cover-text {
         font-size: 32px;
-        left: 5%;
+        left: 35%;
+        top: 35%;
     }
     .productsall {
         gap: 10px;
@@ -226,6 +236,10 @@ header {
     .box {
         margin-top: 30px;
     }
+
+    .cover {
+        height: 400px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -239,7 +253,8 @@ header {
     }
     .cover-text {
         font-size: 28px;
-        left: 0;
+        left: 33%;
+        top: 25%;
     }
     .products {
         margin-top: 2%;
