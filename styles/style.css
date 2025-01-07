@@ -8,14 +8,21 @@ header {
     top: 0;
     width: 100%;
     background-color: #fffffff5;
-    height: 60px;  /* Adjusted header height */
+    height: 60px;
     z-index: 10;
 }
 
+/* Navbar styling */
 .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 10px 20px;
     margin-left: 50px;
     margin-right: 78px;
@@ -23,27 +30,38 @@ header {
 }
 
 .navbar .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 50px;
 }
 
 .company {
-    font-size: 24px;  /* Increased font size for better visibility */
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: 0.2ch;
 }
 
+/* Links with hover transition */
 .navbar .nav-links a {
     text-decoration: none;
     color: #2a2828;
-    font-size: 18px;  /* Increased font size */
+    font-size: 18px;
     font-weight: 400;
-    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease, -webkit-transform 0.3s ease;
+    transition: color 0.3s ease, -webkit-transform 0.3s ease;
+    -o-transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .navbar .nav-links a:hover {
     color: #584b39;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
+
 
 .index {
     text-decoration: none;
@@ -64,24 +82,39 @@ header {
     position: absolute;
     top: 55%;
     left: 20%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     color: white;
     font-size: 54px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .products {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 5%;
 }
 
 .productphoto {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .discription {
@@ -99,17 +132,26 @@ header {
 }
 
 .productsall {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     margin-top: 3%;
     gap: 17px;
     margin-left: 30px;
 }
 
 .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 50px;
 }
 
@@ -186,8 +228,13 @@ header {
         margin: 0 10px;
     }
     .box {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-top: 30px;
     }
     .frankpic {
@@ -244,8 +291,13 @@ header {
 
 @media (max-width: 480px) {
     .navbar .nav-links {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .navbar .nav-links a {
         font-size: 14px;
@@ -260,8 +312,13 @@ header {
         margin-top: 2%;
     }
     .box {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .frankpic {
         max-width: 100%;
@@ -274,4 +331,3 @@ header {
         font-size: 14px;
     }
 }
-

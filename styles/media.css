@@ -9,7 +9,7 @@
         max-width: 500px;
     }
 
-    }
+}
 
 
 @media only screen and (max-width: 1300px) {
@@ -21,7 +21,7 @@
         font-size: 36px;
         font-weight: 800;
     }
-    
+
     .fact {
         font-size: 12px;
         font-weight: 400;
@@ -36,7 +36,7 @@
         font-size: 15px;
         max-width: 400px;
     }
-    
+
 
 
 }
@@ -52,7 +52,7 @@
         font-size: 30px;
         font-weight: 800;
     }
-    
+
     .fact {
         font-size: 12px;
         font-weight: 400;
@@ -68,7 +68,7 @@
         max-width: 300px;
     }
 
-    
+
 }
 
 
@@ -83,7 +83,7 @@
         font-size: 36px;
         font-weight: 800;
     }
-    
+
     .fact {
         font-size: 12px;
         font-weight: 400;
@@ -126,7 +126,7 @@
         font-size: 36px;
         font-weight: 800;
     }
-    
+
     .fact {
         font-size: 12px;
         font-weight: 400;
@@ -155,7 +155,7 @@
         font-size: 22px;
         font-weight: 800;
     }
-    
+
     .fact {
         font-size: 6px;
         font-weight: 400;
