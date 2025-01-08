@@ -345,6 +345,7 @@ h1 {
 
     .product {
         margin: 0 10px;
+        width: 300px;
     }
 
     .box {
@@ -409,7 +410,7 @@ h1 {
     }
 
     .product {
-        width: 250px;
+        width: 280px;
     }
 
     .album,
@@ -445,6 +446,10 @@ h1 {
         font-size: 14px;
         font-weight: 500;
     }
+
+    .superstar {
+        margin-top: 2%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -458,7 +463,7 @@ h1 {
     }
 
     .product {
-        width: 200px;
+        width: 240px;
     }
 
     .album {
@@ -498,4 +503,17 @@ h1 {
     .discription {
         max-width: 220px;
     }
+
+    .hero-text {
+        top: 35%;
+        left: 50%;
+        background-color: #2a282851;
+        
+    }
+
+    .superstar {
+        margin-bottom: 15%;
+    }
+
 }
+

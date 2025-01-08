@@ -128,7 +128,7 @@ header {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    margin-left: 0px;
+    margin-left: 12px;
     margin-top: 5px;
     max-width: 250px;
 }
@@ -254,6 +254,7 @@ header {
         top: 45%;
         font-size: 40px;
         left: 40%;
+        margin-right: 5%;
     }
 
     .products {
@@ -315,6 +316,7 @@ header {
         font-size: 32px;
         left: 35%;
         top: 35%;
+        margin-right: 5%;
     }
 
     .productsall {
@@ -343,9 +345,21 @@ header {
     .cover {
         height: 400px;
     }
+
+    .frankpic {
+        margin-left: 20%;
+    }
+
+    .guitar {
+        margin-left: 45%;
+    }
+
+    .facts {
+        margin-left: 50%;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 485px) {
     .navbar .nav-links {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -381,9 +395,17 @@ header {
         align-items: center;
     }
 
+    .guitar {
+        margin-left: 15%;
+    }
+
     .frankpic {
         max-width: 100%;
-        margin-left: 0;
+        margin-left: 15%;
+    }
+
+    .facts {
+        margin-left: 15%;
     }
 
     .cover,
@@ -394,5 +416,9 @@ header {
 
     .text {
         font-size: 14px;
+    }
+
+    .cover-text {
+        margin-left: 5%;
     }
 }
