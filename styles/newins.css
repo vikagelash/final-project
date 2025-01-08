@@ -61,6 +61,12 @@ header {
     transform: scale(1.1);
 }
 
+.burgermenu {
+    width: 40px;
+    height: 35px;
+    display: none;
+}
+
 
 .index {
     text-decoration: none;
@@ -112,6 +118,7 @@ h1 {
 .description {
     font-size: 18px;
     font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .price {
@@ -156,18 +163,107 @@ h1 {
 .hero-text p {
     font-size: 24px;
     font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
 }
-
-
 
 .footer {
-    background-color: #000000;
-    color: white;
-    padding: 100px;
     text-align: center;
-    margin-top: 40px;
+    padding: 60px;
+    background-color: #222;
+    color: #fff;
 }
 
-.footer p {
-    font-size: 14px;
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+    color: #ffd700; 
+}
+
+.footer .logo {
+    margin-top: 15px;
+}
+
+.footer .logo img {
+    transition: transform 0.3s ease;
+}
+
+.footer .logo img:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 1080px) {
+    .navbar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .navbar .nav-links {
+        gap: 20px;
+    }
+
+    .cover-text {
+        top: 45%;
+        font-size: 40px;
+        left: 40%;
+    }
+
+    .products {
+        margin-top: 2%;
+    }
+
+    .product {
+        margin: 0 10px;
+    }
+
+    .box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .frankpic {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .text {
+        margin-left: 0;
+    }
+
+    .cover2,
+    .cover3 {
+        height: 400px;
+    }
+
+    .cover {
+        height: 500px;
+    }
+
+    .burgermenu {
+        display: inline-block;
+    }
+
+    .navbar .nav-links a {
+        display: none;
+    }
+
+    .company {
+        font-size: 17px;
+    }
 }
