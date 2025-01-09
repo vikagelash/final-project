@@ -141,10 +141,10 @@ header {
 .productsall {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    justify-content: center; 
+    align-items: center;
     gap: 17px;
-    margin: 0 auto; /* Center the container itself */
+    margin: 0 auto; 
 }
 .box {
     display: -webkit-box;
@@ -406,7 +406,7 @@ header {
     }
 
     .guitar {
-        margin-left: 18%;
+        margin-left: 17%;
     }
 
     .frankpic {
@@ -430,5 +430,20 @@ header {
 
     .cover-text {
         margin-left: 5%;
+    }
+}
+
+@media (max-width: 485px) { 
+    .guitar {
+        margin-left: 25%;
+    }
+
+    .frankpic {
+        max-width: 100%;
+        margin-left: 15%;
+    }
+
+    .facts {
+        margin-left: 17%;
     }
 }
